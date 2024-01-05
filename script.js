@@ -5,17 +5,17 @@ let resetButton = document.getElementById("reset-button");
 let audio = new Audio("start-sound.mp3");
 var Interval;
 startButton.onclick = function () {
+  if(tensCount <= 0 && secondsCount <= 0 && minutesCount <= 0){
+    audio.play();
+  }
   clearInterval(Interval);
   Interval = setInterval(startTimer, 10);
-  audio.play();
 };
 stopButton.onclick = function () {
   StopTimer();
-  audio.play();
 };
 resetButton.onclick = function () {
   ResetTimer();
-  audio.play();
 };
 
 let tensCount = 0;
