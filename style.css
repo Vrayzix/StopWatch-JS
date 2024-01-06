@@ -4,6 +4,7 @@
 body{
     background-image: url(backgroundImage.jpg);
     background-size:cover;
+    margin: 0px;
 }
 body .main{
     display: flex;
