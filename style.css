@@ -4,33 +4,49 @@
 body{
     background-image: url(backgroundImage.jpg);
     background-size:cover;
-    margin: 0px;
-}
-body .main{
+    background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-size: 50px;
+    margin: 0px;
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: 0 0 8px;
+    text-shadow: 0px 0px 8px;
     color: rgb(172, 0, 0);
 }
-h1{
-    margin: 15px;
+.container{
+    display: flex;
 }
-body .main .numbers{
-    font-size: 80px;
+.container .main{
+    text-align: center;
+}
+.title h1{
+    font-size: 100px;
+}
+.numbers{
+    font-size: 90px;
     font-weight: bold;
 }
-body button{
+ .buttons button{
     background: none;
-    border: 4px solid;
+    border: 8px solid;
     border-radius: 15px;
-    padding: 30px 50px;
-    font-size: 30px;
-    text-shadow: 0 0 8px;
-    box-shadow: 0 0 8px 0px inset,0 0 8px 0px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+    text-shadow: 0px 0px 8px;
+    box-shadow: 0px 0px 15px 0px inset,1px 0px 8px 3px;
     color: rgb(172, 0, 0);
+}
+@media screen and (max-width: 635px) {
+    .title h1{
+        font-size: 80px;
+    }
+    .numbers{
+        font-size: 60px;
+    }
+    .buttons button{
+        font-size: 35px;
+    }
 }
